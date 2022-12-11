@@ -1,0 +1,42 @@
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-lg-9">
+                <p class="h2">
+                    Estudiantes
+                </p>
+            </div>
+            <div class="col-lg-3 text-end">
+                <button disabled type="button" class="btn btn-outline-success">Nuevo</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre completo</th>
+                    <th>Grupo</th>
+                    <th>Correo</th>
+                    <th>Telefono</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of data" [routerLink]="'form/'+item.s_id">
+                    <td>{{item.code}}</td>
+                    <td>{{item.first_name}} {{item.last_name}}</td>
+                    <td>{{item.group}}</td>
+                    <td>{{item.email}}</td>
+                    <td>{{item.phone_number}}</td>
+                    <td>
+                        <span class="badge" [ngClass]="item.status==0?'bg-danger':'bg-success'">{{item.status==1?'Activo':'Inactivo'}}</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

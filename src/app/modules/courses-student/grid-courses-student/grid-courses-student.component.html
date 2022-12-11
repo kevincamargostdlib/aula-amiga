@@ -1,0 +1,40 @@
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-lg-9">
+                <p class="h2">
+                    Cursos
+                </p>
+            </div>
+            <div class="col-lg-3 text-end">
+                <button disabled type="button" class="btn btn-outline-success">Nuevo</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>id Estudiante</th>
+                    <th>id Curso</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of data">
+                    <td>{{item.cxs_id}}</td>
+                    <td>{{item.c_id}}</td>
+                    <td>{{item.s_id}}</td>
+                    <td (click)="delete(item)">
+                        <button type="button" class="btn btn-outline-danger"><i class="fa fa-trash"
+                                aria-hidden="true"></i></button>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

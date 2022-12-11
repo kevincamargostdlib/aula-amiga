@@ -1,0 +1,62 @@
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1200px;
+}
+.float-left {
+    float: left!important;
+}
+.top-section {
+    background-color: #002b46;
+    padding: 20px 0;
+}
+.top-section .contact-topbar {
+    margin-left: 20px;
+    font-size: 13px;
+    color: #ccc;
+}
+@media (min-width: 470px) and (max-width: 1366px){
+    .top-section .contact-topbar {
+        margin-left: 10px;
+        margin-top: 4px;
+        font-size: 12px;
+    }
+}
+
+.top-section .fa-facebook:hover {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.top-section .fa-twitter:hover {
+    background-color: #1dcaff;
+    color: #fff;
+}
+
+.top-section .contact-topbar .fa {
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 2px;
+    color: #017f77;
+}
+
+.top-section .fa-facebook, .top-section .fa-twitter, .top-section .fa-google-plus {
+    background-color: #00253c;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    padding: 6px;
+    width: 30px;
+    height: 30px;
+    color: #7f919d;
+    font-size: 17px!important;
+    text-align: center;
+    margin-right: 8px!important;
+    vertical-align: middle;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #285556;
+}
+.nav-link {
+    color: #285556;
+}
